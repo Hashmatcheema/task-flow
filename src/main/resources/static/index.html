@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Task Management System</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1 class="app-title">TaskFlow</h1>
+                <nav class="main-nav">
+                    <button class="nav-btn active" data-view="list">Tasks</button>
+                    <button class="nav-btn" data-view="stats">Statistics</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Task List View -->
+            <div id="list-view" class="view active">
+                <!-- Filters Section -->
+                <div class="filters-section">
+                    <div class="filter-group">
+                        <label for="filter-status">Status:</label>
+                        <select id="filter-status">
+                            <option value="">All</option>
+                            <option value="OPEN">Open</option>
+                            <option value="IN_PROGRESS">In Progress</option>
+                            <option value="COMPLETED">Completed</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-priority">Priority:</label>
+                        <select id="filter-priority">
+                            <option value="">All</option>
+                            <option value="HIGH">High</option>
+                            <option value="MEDIUM">Medium</option>
+                            <option value="LOW">Low</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-date">Due Date:</label>
+                        <select id="filter-date">
+                            <option value="">All</option>
+                            <option value="overdue">Overdue</option>
+                            <option value="today">Today</option>
+                            <option value="this-week">This Week</option>
+                        </select>
+                    </div>
+                    <div class="filter-group search-group">
+                        <label for="search-input">Search:</label>
+                        <input type="text" id="search-input" placeholder="Search tasks...">
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort-by">Sort By:</label>
+                        <select id="sort-by">
+                            <option value="">Default (Priority, Due Date)</option>
+                            <option value="priority-asc">Priority (High to Low)</option>
+                            <option value="priority-desc">Priority (Low to High)</option>
+                            <option value="dueDate-asc">Due Date (Earliest First)</option>
+                            <option value="dueDate-desc">Due Date (Latest First)</option>
+                            <option value="title-asc">Title (A-Z)</option>
+                            <option value="title-desc">Title (Z-A)</option>
+                            <option value="createdAt-desc">Created Date (Newest First)</option>
+                            <option value="createdAt-asc">Created Date (Oldest First)</option>
+                        </select>
+                    </div>
+                    <button id="clear-filters" class="btn-secondary">Clear Filters</button>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="actions-section">
+                    <button id="create-task-btn" class="btn-primary">+ Create New Task</button>
+                    <button id="export-btn" class="btn-secondary">Export Backup</button>
+                </div>
+
+                <!-- Tasks Container -->
+                <div id="tasks-container" class="tasks-container">
+                    <div class="loading">Loading tasks...</div>
+                </div>
+            </div>
+
+            <!-- Statistics View -->
+            <div id="stats-view" class="view">
+                <div class="stats-container">
+                    <h2>Task Statistics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-label">Total Tasks</div>
+                            <div class="stat-value" id="stat-total">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Open</div>
+                            <div class="stat-value" id="stat-open">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">In Progress</div>
+                            <div class="stat-value" id="stat-in-progress">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Completed</div>
+                            <div class="stat-value" id="stat-completed">0</div>
+                        </div>
+                        <div class="stat-card overdue">
+                            <div class="stat-label">Overdue</div>
+                            <div class="stat-value" id="stat-overdue">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task Detail/Edit Modal -->
+            <div id="task-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 id="modal-title">Task Details</h2>
+                        <button class="modal-close" id="close-modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="task-form">
+                            <input type="hidden" id="task-id">
+                            
+                            <div class="form-group">
+                                <label for="task-title">Title *</label>
+                                <input type="text" id="task-title" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="task-description">Description</label>
+                                <textarea id="task-description" rows="4"></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="task-priority">Priority</label>
+                                    <select id="task-priority">
+                                        <option value="LOW">Low</option>
+                                        <option value="MEDIUM" selected>Medium</option>
+                                        <option value="HIGH">High</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="task-due-date">Due Date</label>
+                                    <input type="date" id="task-due-date">
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="status-group" style="display: none;">
+                                <label for="task-status">Status</label>
+                                <select id="task-status">
+                                    <option value="OPEN">Open</option>
+                                    <option value="IN_PROGRESS">In Progress</option>
+                                    <option value="COMPLETED">Completed</option>
+                                </select>
+                            </div>
+
+                            <!-- Status History Section (for detail view) -->
+                            <div id="status-history-section" style="display: none;">
+                                <h3>Status History</h3>
+                                <div id="status-history-list"></div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary" id="save-task-btn">Save</button>
+                                <button type="button" class="btn-primary" id="edit-task-btn" style="display: none;">Edit</button>
+                                <button type="button" class="btn-secondary" id="cancel-btn">Cancel</button>
+                                <button type="button" class="btn-danger" id="delete-task-btn" style="display: none;">Delete</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <!-- Scripts -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/router.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
+

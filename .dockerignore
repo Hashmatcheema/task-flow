@@ -1,0 +1,50 @@
+# Build artifacts
+target/
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+!README.md
+docs/
+
+# Test files
+src/test/
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+
+# Database files (will be in volume)
+*.db
+*.db-shm
+*.db-wal
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# CI/CD (keep .gitlab-ci.yml)
+.github/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
