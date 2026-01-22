@@ -1,0 +1,274 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< erdem.taskflow:Task-Flow >----------------------
+[INFO] Building Task-Flow 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (default) @ Task-Flow ---
+[INFO] argLine set to -javaagent:C:\\Users\\Admin\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=C:\\Users\\Admin\\Desktop\\task-flow\\target\\jacoco.exec,excludes=**/*Test.class:**/*Tests.class
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Task-Flow ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ Task-Flow ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 12 source files with javac [debug parameters release 17] to target\classes
+[WARNING] /C:/Users/Admin/Desktop/task-flow/src/main/java/erdem/taskflow/model/Task.java:[27,5] Not generating getTitle(): A method with that name already exists
+[WARNING] /C:/Users/Admin/Desktop/task-flow/src/main/java/erdem/taskflow/model/Task.java:[31,5] Not generating getDescription(): A method with that name already exists
+[WARNING] /C:/Users/Admin/Desktop/task-flow/src/main/java/erdem/taskflow/model/Task.java:[34,5] Not generating getPriority(): A method with that name already exists
+[WARNING] /C:/Users/Admin/Desktop/task-flow/src/main/java/erdem/taskflow/model/Task.java:[38,5] Not generating getDueDate(): A method with that name already exists
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Task-Flow ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ Task-Flow ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ Task-Flow ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running erdem.taskflow.controller.TaskControllerTest
+./mvnw : Mockito is 
+currently 
+self-attaching to 
+enable the 
+inline-mock-maker. 
+This will no longer 
+work in future 
+releases of the JDK. 
+Please add Mockito 
+as an agent to your 
+build as described 
+in Mockito's 
+documentation: https:
+//javadoc.io/doc/org.
+mockito/mockito-core/
+latest/org.mockito/or
+g/mockito/Mockito.htm
+l#0.3
+At line:1 char:1
++ ./mvnw package > 
+build_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Mockito   
+  is curr...ockit    
+o.html#0.3:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+WARNING: A Java 
+agent has been 
+loaded dynamically (C
+:\Users\Admin\.m2\rep
+ository\net\bytebuddy
+\byte-buddy-agent\1.1
+7.8\byte-buddy-agent-
+1.17.8.jar)
+WARNING: If a 
+serviceability tool 
+is in use, please 
+run with -XX:+EnableD
+ynamicAgentLoading 
+to hide this warning
+WARNING: If a 
+serviceability tool 
+is not in use, 
+please run with -Djdk
+.instrument.traceUsag
+e for more 
+information
+WARNING: Dynamic 
+loading of agents 
+will be disallowed 
+by default in a 
+future release
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.103 s -- in erdem.taskflow.controller.TaskControllerTest
+[INFO] Running erdem.taskflow.repository.TaskRepositoryPerformanceTest
+23:38:02.718 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [erdem.taskflow.repository.TaskRepositoryPerformanceTest]: TaskRepositoryPerformanceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:38:05.062 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration erdem.taskflow.TaskFlowApplication for test class erdem.taskflow.repository.TaskRepositoryPerformanceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-01-22T23:38:08.475+05:00  INFO 6616 --- [Task-Flow-Test] [           main] e.t.r.TaskRepositoryPerformanceTest      : Starting TaskRepositoryPerformanceTest using Java 21.0.7 with PID 6616 (started by Admin in C:\Users\Admin\Desktop\task-flow)
+2026-01-22T23:38:08.481+05:00  INFO 6616 --- [Task-Flow-Test] [           main] e.t.r.TaskRepositoryPerformanceTest      : No active profile set, falling back to 1 default profile: "default"
+2026-01-22T23:38:12.164+05:00  INFO 6616 --- [Task-Flow-Test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-22T23:38:12.454+05:00  INFO 6616 --- [Task-Flow-Test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 221 ms. Found 1 JPA repository interface.
+2026-01-22T23:38:14.611+05:00  INFO 6616 --- [Task-Flow-Test] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-22T23:38:15.041+05:00  INFO 6616 --- [Task-Flow-Test] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-22T23:38:17.056+05:00  INFO 6616 --- [Task-Flow-Test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-22T23:38:17.265+05:00  INFO 6616 --- [Task-Flow-Test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-22T23:38:19.613+05:00  INFO 6616 --- [Task-Flow-Test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-01-22T23:38:19.623+05:00  INFO 6616 --- [Task-Flow-Test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-22T23:38:19.848+05:00  WARN 6616 --- [Task-Flow-Test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-22T23:38:20.055+05:00  INFO 6616 --- [Task-Flow-Test] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-22T23:38:25.944+05:00  INFO 6616 --- [Task-Flow-Test] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-22T23:38:26.129+05:00  INFO 6616 --- [Task-Flow-Test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-22T23:38:26.412+05:00  INFO 6616 --- [Task-Flow-Test] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-22T23:38:32.990+05:00  WARN 6616 --- [Task-Flow-Test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-22T23:38:33.091+05:00  INFO 6616 --- [Task-Flow-Test] [           main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-01-22T23:38:35.509+05:00  INFO 6616 --- [Task-Flow-Test] [           main] e.t.r.TaskRepositoryPerformanceTest      : Started TaskRepositoryPerformanceTest in 29.11 seconds (process running for 46.815)
+Generated 10000 tasks for comprehensive performance test
+Status Filter: Min: 61 ms, Max: 116 ms, Avg: 82.40 ms
+Priority Filter: Min: 41 ms, Max: 69 ms, Avg: 51.70 ms
+Date Range Filter: Min: 35 ms, Max: 166 ms, Avg: 60.30 ms
+Search Term Filter: Min: 66 ms, Max: 103 ms, Avg: 78.30 ms
+Combined Filters: Min: 30 ms, Max: 98 ms, Avg: 53.80 ms
+
+=== Performance Test Summary ===
+All filter operations completed within acceptable time limits.
+Generated 10000 tasks for search term filter test
+Filter by Search Term - Min: 70 ms, Max: 198 ms, Avg: 102.30 ms
+Generated 10000 tasks for status filter test
+Filter by Status - Min: 47 ms, Max: 74 ms, Avg: 61.20 ms
+Generated 10000 tasks for combined filters test
+Combined Filters (Status + Priority + Date) - Min: 32 ms, Max: 50 ms, Avg: 40.20 ms
+Generated 10000 tasks for priority filter test
+Filter by Priority - Min: 38 ms, Max: 68 ms, Avg: 49.50 ms
+Generated 10000 tasks for date range filter test
+Filter by Date Range - Min: 39 ms, Max: 83 ms, Avg: 53.30 ms
+Generated 10000 tasks for getAll test
+Get All (with sorting) - Min: 61 ms, Max: 102 ms, Avg: 80.50 ms
+[ERROR] Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 64.61 s <<< FAILURE! -- in erdem.taskflow.repository.TaskRepositoryPerformanceTest
+[ERROR] erdem.taskflow.repository.TaskRepositoryPerformanceTest.testFilterBySearchTerm_Performance -- Time elapsed: 3.502 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Average filter time (102.30 ms) exceeds maximum allowed (100 ms) ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:69)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:41)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:228)
+	at erdem.taskflow.repository.TaskRepositoryPerformanceTest.testFilterBySearchTerm_Performance(TaskRepositoryPerformanceTest.java:227)
+
+[INFO] Running erdem.taskflow.repository.TaskRepositoryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.527 s -- in erdem.taskflow.repository.TaskRepositoryTest
+[INFO] Running erdem.taskflow.service.TaskServiceTest
+[ERROR] Tests run: 13, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.249 s <<< FAILURE! -- in erdem.taskflow.service.TaskServiceTest
+[ERROR] erdem.taskflow.service.TaskServiceTest.testFilterTasks -- Time elapsed: 0.049 s <<< ERROR!
+org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+
+Invalid use of argument matchers!
+6 matchers expected, 1 recorded:
+-> at erdem.taskflow.service.TaskServiceTest.testFilterTasks(TaskServiceTest.java:196)
+
+This exception may occur if matchers are combined with raw values:
+    //incorrect:
+    someMethod(any(), "raw String");
+When using matchers, all arguments have to be provided by matchers.
+For example:
+    //correct:
+    someMethod(any(), eq("String by matcher"));
+
+For more info see javadoc for Matchers class.
+
+	at erdem.taskflow.service.TaskServiceTest.testFilterTasks(TaskServiceTest.java:196)
+
+[INFO] Running erdem.taskflow.TaskFlowApplicationTests
+2026-01-22T23:39:06.676+05:00  INFO 6616 --- [Task-Flow-Test] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [erdem.taskflow.TaskFlowApplicationTests]: TaskFlowApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-22T23:39:06.705+05:00  INFO 6616 --- [Task-Flow-Test] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration erdem.taskflow.TaskFlowApplication for test class erdem.taskflow.TaskFlowApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-01-22T23:39:06.950+05:00  INFO 6616 --- [Task-Flow] [           main] e.taskflow.TaskFlowApplicationTests      : Starting TaskFlowApplicationTests using Java 21.0.7 with PID 6616 (started by Admin in C:\Users\Admin\Desktop\task-flow)
+2026-01-22T23:39:06.952+05:00  INFO 6616 --- [Task-Flow] [           main] e.taskflow.TaskFlowApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-01-22T23:39:07.886+05:00  INFO 6616 --- [Task-Flow] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-22T23:39:08.006+05:00  INFO 6616 --- [Task-Flow] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interface.
+2026-01-22T23:39:08.395+05:00  INFO 6616 --- [Task-Flow] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-22T23:39:08.673+05:00  INFO 6616 --- [Task-Flow] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-22T23:39:08.679+05:00  INFO 6616 --- [Task-Flow] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-01-22T23:39:09.524+05:00  INFO 6616 --- [Task-Flow] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.sqlite.jdbc4.JDBC4Connection@5bb64ea4
+2026-01-22T23:39:09.526+05:00  INFO 6616 --- [Task-Flow] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-01-22T23:39:09.624+05:00  INFO 6616 --- [Task-Flow] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:sqlite:taskflow.db]
+	Database driver: SQLite JDBC
+	Database dialect: SQLiteDialect
+	Database version: 3.44.1
+	Default catalog/schema: undefined/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: SERIALIZABLE [default SERIALIZABLE]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-22T23:39:09.862+05:00  INFO 6616 --- [Task-Flow] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-22T23:39:09.951+05:00  INFO 6616 --- [Task-Flow] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-22T23:39:10.186+05:00  WARN 6616 --- [Task-Flow] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-22T23:39:10.214+05:00  INFO 6616 --- [Task-Flow] [           main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-01-22T23:39:10.614+05:00  INFO 6616 --- [Task-Flow] [           main] e.taskflow.TaskFlowApplicationTests      : Started TaskFlowApplicationTests in 3.897 seconds (process running for 81.922)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.981 s -- in erdem.taskflow.TaskFlowApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TaskRepositoryPerformanceTest.testFilterBySearchTerm_Performance:227 Average filter time (102.30 ms) exceeds maximum allowed (100 ms) ==> expected: <true> but was: <false>
+[ERROR] Errors: 
+[ERROR]   TaskServiceTest.testFilterTasks:196 InvalidUseOfMatchers 
+Invalid use of argument matchers!
+6 matchers expected, 1 recorded:
+-> at erdem.taskflow.service.TaskServiceTest.testFilterTasks(TaskServiceTest.java:196)
+
+This exception may occur if matchers are combined with raw values:
+    //incorrect:
+    someMethod(any(), "raw String");
+When using matchers, all arguments have to be provided by matchers.
+For example:
+    //correct:
+    someMethod(any(), eq("String by matcher"));
+
+For more info see javadoc for Matchers class.
+
+[INFO] 
+[ERROR] Tests run: 34, Failures: 1, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:41 min
+[INFO] Finished at: 2026-01-22T23:39:12+05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.4:test (default-test) on project Task-Flow: There are test failures.
+[ERROR] 
+[ERROR] See C:\Users\Admin\Desktop\task-flow\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

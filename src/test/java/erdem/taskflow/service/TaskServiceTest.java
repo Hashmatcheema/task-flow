@@ -193,25 +193,26 @@ class TaskServiceTest {
 
         assertNotNull(result);
         assertEquals(1, result.size());
-        verify(taskRepository).findWithFilters(Status.OPEN, Priority.HIGH, null, null, null, any(LocalDate.class));
+        verify(taskRepository).findWithFilters(eq(Status.OPEN), eq(Priority.HIGH), isNull(), isNull(), isNull(),
+                any(LocalDate.class));
     }
 
     // @Test
     // void testGetStatistics() {
-    //     when(taskRepository.countByStatus(Status.OPEN)).thenReturn(5L);
-    //     when(taskRepository.countByStatus(Status.IN_PROGRESS)).thenReturn(3L);
-    //     when(taskRepository.countByStatus(Status.COMPLETED)).thenReturn(10L);
-    //     when(taskRepository.countOverdueTasks(any(LocalDate.class))).thenReturn(2L);
-    //     when(taskRepository.count()).thenReturn(18L);
+    // when(taskRepository.countByStatus(Status.OPEN)).thenReturn(5L);
+    // when(taskRepository.countByStatus(Status.IN_PROGRESS)).thenReturn(3L);
+    // when(taskRepository.countByStatus(Status.COMPLETED)).thenReturn(10L);
+    // when(taskRepository.countOverdueTasks(any(LocalDate.class))).thenReturn(2L);
+    // when(taskRepository.count()).thenReturn(18L);
 
-    //     TaskStatsDTO stats = taskService.getStatistics();
+    // TaskStatsDTO stats = taskService.getStatistics();
 
-    //     assertNotNull(stats);
-    //     assertEquals(5L, stats.getOpenTasks());
-    //     assertEquals(3L, stats.getInProgressTasks());
-    //     assertEquals(10L, stats.getCompletedTasks());
-    //     assertEquals(2L, stats.getOverdueTasks());
-    //     assertEquals(18L, stats.getTotalTasks());
+    // assertNotNull(stats);
+    // assertEquals(5L, stats.getOpenTasks());
+    // assertEquals(3L, stats.getInProgressTasks());
+    // assertEquals(10L, stats.getCompletedTasks());
+    // assertEquals(2L, stats.getOverdueTasks());
+    // assertEquals(18L, stats.getTotalTasks());
     // }
 
     @Test
@@ -242,4 +243,3 @@ class TaskServiceTest {
         verify(taskRepository).findWithFilters(any(), any(), any(), any(), any(), any(LocalDate.class));
     }
 }
-
