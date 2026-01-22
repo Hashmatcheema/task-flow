@@ -14,27 +14,27 @@ Maximum points are only awarded if the exercise content is meaningfully adapted 
 - [ ] Rollback tested (optional)
 
 ## Project Setup (10%)
-- [ ] Repo initialized
+- [x] Repo initialized
 - [ ] Checklist versioned
 - [ ] README structured
 - [ ] .gitignore customized
 
 ## Automation / Pipeline (20%)
-- [ ] Automated builds
-- [ ] Automated tests
+- [x] Automated builds
+- [x] Automated tests
 - [ ] Automated deployment
-- [ ] Code quality checks
+- [x] Code quality checks
 
 ## Testing (10%)
-- [ ] Unit tests
+- [x] Unit tests
 - [ ] Integration tests
 - [ ] E2E tests
 - [ ] Coverage documented
 
 ## Containerization (20%)
-- [ ] Docker usage
-- [ ] CI/CD integration
-- [ ] Multi-stage builds
+- [x] Docker usage
+- [x] CI/CD integration
+- [x] Multi-stage builds
 
 ## Infrastructure (10%)
 - [ ] Config templates versioned
