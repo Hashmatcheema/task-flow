@@ -1,0 +1,966 @@
+﻿[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< erdem.taskflow:Task-Flow >----------------------
+[INFO] Building Task-Flow 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.0:clean (default-clean) @ Task-Flow ---
+[INFO] Deleting C:\Users\Admin\Desktop\task-flow\target
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (default) @ Task-Flow ---
+[INFO] argLine set to -javaagent:C:\\Users\\Admin\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=C:\\Users\\Admin\\Desktop\\task-flow\\target\\jacoco.exec,excludes=**/*Test.class:**/*Tests.class
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Task-Flow ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 7 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ Task-Flow ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 12 source files with javac [debug parameters release 17] to target\classes
+[WARNING] /C:/Users/Admin/Desktop/task-flow/src/main/java/erdem/taskflow/model/Task.java:[27,5] Not generating getTitle(): A method with that name already exists
+[WARNING] /C:/Users/Admin/Desktop/task-flow/src/main/java/erdem/taskflow/model/Task.java:[31,5] Not generating getDescription(): A method with that name already exists
+[WARNING] /C:/Users/Admin/Desktop/task-flow/src/main/java/erdem/taskflow/model/Task.java:[34,5] Not generating getPriority(): A method with that name already exists
+[WARNING] /C:/Users/Admin/Desktop/task-flow/src/main/java/erdem/taskflow/model/Task.java:[38,5] Not generating getDueDate(): A method with that name already exists
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Task-Flow ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ Task-Flow ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ Task-Flow ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.pom
+Progress (1): 842 B
+Progress (1): 2.1 kB
+Progress (1): 3.5 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.pom (3.5 kB at 1.5 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.pom
+Progress (1): 832 B
+Progress (1): 1.8 kB
+Progress (1): 3.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.pom (3.3 kB at 35 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.pom
+Progress (1): 1.1 kB
+Progress (1): 3.6 kB
+Progress (1): 4.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.pom (4.7 kB at 71 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.pom
+Progress (1): 839 B
+Progress (1): 2.5 kB
+Progress (1): 3.5 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.pom (3.5 kB at 46 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.pom
+Progress (1): 824 B
+Progress (1): 2.9 kB
+Progress (1): 6.7 kB
+Progress (1): 7.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.pom (7.8 kB at 112 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.pom
+Progress (1): 833 B
+Progress (1): 2.4 kB
+Progress (1): 4.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.pom (4.8 kB at 65 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.pom
+Progress (1): 879 B
+Progress (1): 1.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.pom (1.8 kB at 26 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.pom
+Progress (1): 1.0 kB
+Progress (1): 3.5 kB
+Progress (1): 7.2 kB
+Progress (1): 12 kB 
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.pom (14 kB at 200 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.pom
+Progress (1): 872 B
+Progress (1): 2.6 kB
+Progress (1): 5.8 kB
+Progress (1): 9.1 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 18 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.pom (18 kB at 248 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.1/2.8 MB
+Progress (1): 0.2/2.8 MB
+Progress (1): 0.2/2.8 MB
+Progress (1): 0.2/2.8 MB
+Progress (1): 0.2/2.8 MB
+Progress (1): 0.2/2.8 MB
+Progress (1): 0.2/2.8 MB
+Progress (1): 0.2/2.8 MB
+Progress (1): 0.2/2.8 MB
+Progress (2): 0.2/2.8 MB | 0.9/26 kB
+Progress (2): 0.2/2.8 MB | 0.9/26 kB
+Progress (2): 0.2/2.8 MB | 2.3/26 kB
+Progress (2): 0.2/2.8 MB | 3.6/26 kB
+Progress (2): 0.2/2.8 MB | 3.6/26 kB
+Progress (2): 0.2/2.8 MB | 5.0/26 kB
+Progress (2): 0.2/2.8 MB | 6.4/26 kB
+Progress (2): 0.2/2.8 MB | 6.4/26 kB
+Progress (2): 0.2/2.8 MB | 7.7/26 kB
+Progress (2): 0.2/2.8 MB | 9.1/26 kB
+Progress (2): 0.2/2.8 MB | 10/26 kB 
+Progress (2): 0.2/2.8 MB | 12/26 kB
+Progress (2): 0.2/2.8 MB | 13/26 kB
+Progress (2): 0.2/2.8 MB | 15/26 kB
+Progress (2): 0.2/2.8 MB | 16/26 kB
+Progress (2): 0.2/2.8 MB | 16/26 kB
+Progress (2): 0.2/2.8 MB | 17/26 kB
+Progress (2): 0.2/2.8 MB | 19/26 kB
+Progress (2): 0.2/2.8 MB | 20/26 kB
+Progress (2): 0.2/2.8 MB | 21/26 kB
+Progress (2): 0.2/2.8 MB | 23/26 kB
+Progress (2): 0.2/2.8 MB | 24/26 kB
+Progress (2): 0.2/2.8 MB | 24/26 kB
+Progress (2): 0.2/2.8 MB | 25/26 kB
+Progress (2): 0.2/2.8 MB | 26/26 kB
+Progress (2): 0.2/2.8 MB | 26 kB   
+Progress (2): 0.2/2.8 MB | 26 kB
+Progress (2): 0.3/2.8 MB | 26 kB
+Progress (2): 0.3/2.8 MB | 26 kB
+Progress (3): 0.3/2.8 MB | 26 kB | 0.9/14 kB
+Progress (3): 0.3/2.8 MB | 26 kB | 0.9/14 kB
+Progress (3): 0.3/2.8 MB | 26 kB | 2.3/14 kB
+Progress (3): 0.3/2.8 MB | 26 kB | 3.6/14 kB
+Progress (4): 0.3/2.8 MB | 26 kB | 3.6/14 kB | 0.9/311 kB
+Progress (4): 0.3/2.8 MB | 26 kB | 3.6/14 kB | 2.3/311 kB
+Progress (4): 0.3/2.8 MB | 26 kB | 3.6/14 kB | 3.6/311 kB
+Progress (4): 0.3/2.8 MB | 26 kB | 3.6/14 kB | 5.0/311 kB
+Progress (4): 0.3/2.8 MB | 26 kB | 3.6/14 kB | 5.0/311 kB
+Progress (4): 0.3/2.8 MB | 26 kB | 3.6/14 kB | 6.4/311 kB
+Progress (4): 0.3/2.8 MB | 26 kB | 3.6/14 kB | 7.7/311 kB
+                                                         
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar (26 kB at 35 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar
+Progress (3): 0.3/2.8 MB | 3.6/14 kB | 9.1/311 kB
+Progress (3): 0.3/2.8 MB | 3.6/14 kB | 10/311 kB 
+Progress (3): 0.3/2.8 MB | 3.6/14 kB | 12/311 kB
+Progress (3): 0.3/2.8 MB | 3.6/14 kB | 13/311 kB
+Progress (3): 0.3/2.8 MB | 5.0/14 kB | 13/311 kB
+Progress (3): 0.3/2.8 MB | 5.0/14 kB | 13/311 kB
+Progress (3): 0.3/2.8 MB | 5.0/14 kB | 15/311 kB
+Progress (3): 0.3/2.8 MB | 6.4/14 kB | 15/311 kB
+Progress (3): 0.3/2.8 MB | 6.4/14 kB | 16/311 kB
+Progress (3): 0.3/2.8 MB | 7.7/14 kB | 16/311 kB
+Progress (3): 0.3/2.8 MB | 9.1/14 kB | 16/311 kB
+Progress (3): 0.3/2.8 MB | 9.1/14 kB | 17/311 kB
+Progress (3): 0.3/2.8 MB | 10/14 kB | 17/311 kB 
+Progress (3): 0.3/2.8 MB | 10/14 kB | 19/311 kB
+Progress (3): 0.3/2.8 MB | 12/14 kB | 19/311 kB
+Progress (3): 0.3/2.8 MB | 13/14 kB | 19/311 kB
+Progress (3): 0.3/2.8 MB | 13/14 kB | 20/311 kB
+Progress (3): 0.3/2.8 MB | 13/14 kB | 20/311 kB
+Progress (3): 0.3/2.8 MB | 14 kB | 20/311 kB   
+Progress (3): 0.3/2.8 MB | 14 kB | 21/311 kB
+Progress (3): 0.3/2.8 MB | 14 kB | 23/311 kB
+Progress (3): 0.3/2.8 MB | 14 kB | 24/311 kB
+Progress (3): 0.3/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.4/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.4/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.4/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.4/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.4/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.4/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 26/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 27/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 28/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 28/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 30/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 30/311 kB
+Progress (3): 0.5/2.8 MB | 14 kB | 30/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 30/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 31/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 31/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 32/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 34/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 35/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 36/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 38/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 39/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 41/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 42/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 43/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 45/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 46/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 47/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 49/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 50/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 52/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 53/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 54/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 56/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 60/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 64/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 68/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 73/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 73/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 77/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 81/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 85/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 85/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 85/311 kB
+Progress (3): 0.6/2.8 MB | 14 kB | 85/311 kB
+Progress (3): 0.7/2.8 MB | 14 kB | 85/311 kB
+Progress (3): 0.7/2.8 MB | 14 kB | 85/311 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 85/311 kB | 0.9/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 85/311 kB | 2.3/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 85/311 kB | 2.3/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 85/311 kB | 3.6/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 89/311 kB | 3.6/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 89/311 kB | 5.0/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 89/311 kB | 6.4/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 94/311 kB | 6.4/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 94/311 kB | 7.7/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 94/311 kB | 9.1/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 98/311 kB | 9.1/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 98/311 kB | 10/118 kB 
+Progress (4): 0.7/2.8 MB | 14 kB | 98/311 kB | 12/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 102/311 kB | 12/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 102/311 kB | 13/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 106/311 kB | 13/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 106/311 kB | 15/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 106/311 kB | 15/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 106/311 kB | 16/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 111/311 kB | 16/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 111/311 kB | 17/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 115/311 kB | 17/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 115/311 kB | 19/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 119/311 kB | 19/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 119/311 kB | 20/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 119/311 kB | 21/118 kB
+Progress (4): 0.7/2.8 MB | 14 kB | 119/311 kB | 21/118 kB
+                                                         
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar (14 kB at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar
+Progress (3): 0.7/2.8 MB | 119/311 kB | 23/118 kB
+Progress (3): 0.7/2.8 MB | 119/311 kB | 24/118 kB
+Progress (3): 0.7/2.8 MB | 119/311 kB | 26/118 kB
+Progress (3): 0.7/2.8 MB | 119/311 kB | 27/118 kB
+Progress (3): 0.7/2.8 MB | 119/311 kB | 31/118 kB
+Progress (3): 0.7/2.8 MB | 119/311 kB | 31/118 kB
+Progress (3): 0.7/2.8 MB | 119/311 kB | 35/118 kB
+Progress (3): 0.7/2.8 MB | 119/311 kB | 40/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 40/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 44/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 48/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 48/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 52/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 57/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 57/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 119/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 123/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 123/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 128/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 132/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 136/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 136/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 140/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 144/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 149/311 kB | 61/118 kB
+Progress (3): 0.8/2.8 MB | 153/311 kB | 61/118 kB
+Progress (3): 0.9/2.8 MB | 153/311 kB | 61/118 kB
+Progress (3): 0.9/2.8 MB | 157/311 kB | 61/118 kB
+Progress (3): 0.9/2.8 MB | 161/311 kB | 61/118 kB
+Progress (3): 0.9/2.8 MB | 166/311 kB | 61/118 kB
+Progress (3): 0.9/2.8 MB | 166/311 kB | 61/118 kB
+Progress (3): 0.9/2.8 MB | 170/311 kB | 61/118 kB
+Progress (3): 0.9/2.8 MB | 174/311 kB | 61/118 kB
+Progress (3): 0.9/2.8 MB | 174/311 kB | 65/118 kB
+Progress (3): 0.9/2.8 MB | 178/311 kB | 65/118 kB
+Progress (3): 0.9/2.8 MB | 178/311 kB | 65/118 kB
+Progress (3): 0.9/2.8 MB | 183/311 kB | 65/118 kB
+Progress (3): 0.9/2.8 MB | 187/311 kB | 65/118 kB
+Progress (3): 0.9/2.8 MB | 187/311 kB | 69/118 kB
+Progress (3): 0.9/2.8 MB | 191/311 kB | 69/118 kB
+Progress (3): 0.9/2.8 MB | 191/311 kB | 73/118 kB
+Progress (3): 0.9/2.8 MB | 195/311 kB | 73/118 kB
+Progress (3): 0.9/2.8 MB | 195/311 kB | 78/118 kB
+Progress (3): 0.9/2.8 MB | 199/311 kB | 78/118 kB
+Progress (3): 0.9/2.8 MB | 199/311 kB | 82/118 kB
+Progress (3): 0.9/2.8 MB | 204/311 kB | 82/118 kB
+Progress (3): 0.9/2.8 MB | 204/311 kB | 86/118 kB
+Progress (3): 0.9/2.8 MB | 208/311 kB | 86/118 kB
+Progress (4): 0.9/2.8 MB | 208/311 kB | 86/118 kB | 0.9/171 kB
+Progress (4): 0.9/2.8 MB | 208/311 kB | 90/118 kB | 0.9/171 kB
+Progress (4): 0.9/2.8 MB | 208/311 kB | 90/118 kB | 2.3/171 kB
+Progress (4): 0.9/2.8 MB | 208/311 kB | 90/118 kB | 3.6/171 kB
+Progress (4): 0.9/2.8 MB | 208/311 kB | 95/118 kB | 3.6/171 kB
+Progress (4): 0.9/2.8 MB | 212/311 kB | 95/118 kB | 3.6/171 kB
+Progress (4): 0.9/2.8 MB | 212/311 kB | 95/118 kB | 5.0/171 kB
+Progress (4): 0.9/2.8 MB | 216/311 kB | 95/118 kB | 5.0/171 kB
+Progress (4): 0.9/2.8 MB | 216/311 kB | 99/118 kB | 5.0/171 kB
+Progress (4): 0.9/2.8 MB | 216/311 kB | 99/118 kB | 6.4/171 kB
+Progress (4): 0.9/2.8 MB | 216/311 kB | 99/118 kB | 7.7/171 kB
+Progress (4): 0.9/2.8 MB | 216/311 kB | 103/118 kB | 7.7/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 103/118 kB | 7.7/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 103/118 kB | 9.1/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 103/118 kB | 9.1/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 103/118 kB | 10/171 kB 
+Progress (4): 0.9/2.8 MB | 221/311 kB | 107/118 kB | 10/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 107/118 kB | 12/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 107/118 kB | 13/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 107/118 kB | 15/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 107/118 kB | 16/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 111/118 kB | 16/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 111/118 kB | 17/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 116/118 kB | 17/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 116/118 kB | 19/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 116/118 kB | 20/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 20/171 kB    
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 21/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 23/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 24/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 26/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 26/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 27/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 28/171 kB
+Progress (4): 0.9/2.8 MB | 221/311 kB | 118 kB | 30/171 kB
+Progress (4): 0.9/2.8 MB | 225/311 kB | 118 kB | 30/171 kB
+Progress (4): 0.9/2.8 MB | 225/311 kB | 118 kB | 31/171 kB
+Progress (4): 0.9/2.8 MB | 225/311 kB | 118 kB | 32/171 kB
+Progress (4): 0.9/2.8 MB | 225/311 kB | 118 kB | 34/171 kB
+Progress (4): 0.9/2.8 MB | 225/311 kB | 118 kB | 35/171 kB
+Progress (4): 0.9/2.8 MB | 241/311 kB | 118 kB | 35/171 kB
+Progress (4): 0.9/2.8 MB | 241/311 kB | 118 kB | 36/171 kB
+Progress (4): 0.9/2.8 MB | 241/311 kB | 118 kB | 38/171 kB
+Progress (4): 0.9/2.8 MB | 241/311 kB | 118 kB | 39/171 kB
+Progress (4): 0.9/2.8 MB | 241/311 kB | 118 kB | 41/171 kB
+Progress (4): 0.9/2.8 MB | 241/311 kB | 118 kB | 42/171 kB
+Progress (4): 0.9/2.8 MB | 258/311 kB | 118 kB | 42/171 kB
+Progress (4): 0.9/2.8 MB | 258/311 kB | 118 kB | 43/171 kB
+Progress (4): 0.9/2.8 MB | 258/311 kB | 118 kB | 45/171 kB
+Progress (4): 0.9/2.8 MB | 258/311 kB | 118 kB | 46/171 kB
+Progress (4): 0.9/2.8 MB | 258/311 kB | 118 kB | 47/171 kB
+Progress (4): 0.9/2.8 MB | 258/311 kB | 118 kB | 47/171 kB
+Progress (4): 0.9/2.8 MB | 258/311 kB | 118 kB | 49/171 kB
+Progress (4): 0.9/2.8 MB | 274/311 kB | 118 kB | 49/171 kB
+Progress (4): 0.9/2.8 MB | 274/311 kB | 118 kB | 50/171 kB
+Progress (4): 0.9/2.8 MB | 274/311 kB | 118 kB | 52/171 kB
+Progress (4): 0.9/2.8 MB | 290/311 kB | 118 kB | 52/171 kB
+Progress (4): 0.9/2.8 MB | 290/311 kB | 118 kB | 52/171 kB
+Progress (4): 0.9/2.8 MB | 290/311 kB | 118 kB | 53/171 kB
+Progress (4): 0.9/2.8 MB | 307/311 kB | 118 kB | 53/171 kB
+Progress (4): 0.9/2.8 MB | 307/311 kB | 118 kB | 54/171 kB
+Progress (4): 1.0/2.8 MB | 307/311 kB | 118 kB | 54/171 kB
+Progress (4): 1.0/2.8 MB | 307/311 kB | 118 kB | 56/171 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 56/171 kB | 0.9/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 60/171 kB | 0.9/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 60/171 kB | 2.3/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 64/171 kB | 2.3/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 64/171 kB | 3.6/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 64/171 kB | 5.0/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 64/171 kB | 6.4/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 64/171 kB | 7.7/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 68/171 kB | 7.7/8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 68/171 kB | 8.2 kB    
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 73/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 77/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 81/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 85/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 89/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 94/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 98/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 102/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 106/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 307/311 kB | 118 kB | 106/171 kB | 8.2 kB
+Progress (5): 1.0/2.8 MB | 311 kB | 118 kB | 106/171 kB | 8.2 kB    
+                                                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar (118 kB at 124 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar
+Progress (4): 1.0/2.8 MB | 311 kB | 106/171 kB | 8.2 kB
+                                                       
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar (8.2 kB at 8.7 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar
+Progress (3): 1.0/2.8 MB | 311 kB | 106/171 kB
+Progress (3): 1.0/2.8 MB | 311 kB | 106/171 kB
+Progress (3): 1.0/2.8 MB | 311 kB | 106/171 kB
+Progress (3): 1.0/2.8 MB | 311 kB | 111/171 kB
+Progress (3): 1.0/2.8 MB | 311 kB | 115/171 kB
+Progress (3): 1.0/2.8 MB | 311 kB | 119/171 kB
+Progress (3): 1.0/2.8 MB | 311 kB | 123/171 kB
+Progress (3): 1.1/2.8 MB | 311 kB | 123/171 kB
+Progress (3): 1.1/2.8 MB | 311 kB | 123/171 kB
+Progress (3): 1.1/2.8 MB | 311 kB | 128/171 kB
+Progress (3): 1.1/2.8 MB | 311 kB | 132/171 kB
+Progress (3): 1.1/2.8 MB | 311 kB | 132/171 kB
+Progress (3): 1.1/2.8 MB | 311 kB | 132/171 kB
+Progress (3): 1.1/2.8 MB | 311 kB | 132/171 kB
+Progress (3): 1.1/2.8 MB | 311 kB | 132/171 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar (311 kB at 319 kB/s)
+Progress (2): 1.2/2.8 MB | 132/171 kB
+Progress (3): 1.2/2.8 MB | 132/171 kB | 4.1/57 kB
+Progress (3): 1.2/2.8 MB | 132/171 kB | 20/57 kB 
+Progress (3): 1.2/2.8 MB | 136/171 kB | 20/57 kB
+Progress (3): 1.2/2.8 MB | 136/171 kB | 20/57 kB
+Progress (3): 1.2/2.8 MB | 140/171 kB | 20/57 kB
+Progress (3): 1.2/2.8 MB | 140/171 kB | 37/57 kB
+Progress (3): 1.2/2.8 MB | 144/171 kB | 37/57 kB
+Progress (3): 1.2/2.8 MB | 144/171 kB | 37/57 kB
+Progress (3): 1.2/2.8 MB | 144/171 kB | 53/57 kB
+Progress (3): 1.2/2.8 MB | 144/171 kB | 57 kB   
+Progress (3): 1.2/2.8 MB | 144/171 kB | 57 kB
+Progress (3): 1.2/2.8 MB | 144/171 kB | 57 kB
+Progress (3): 1.2/2.8 MB | 144/171 kB | 57 kB
+Progress (4): 1.2/2.8 MB | 144/171 kB | 57 kB | 0.9/348 kB
+Progress (4): 1.2/2.8 MB | 144/171 kB | 57 kB | 2.3/348 kB
+Progress (4): 1.2/2.8 MB | 144/171 kB | 57 kB | 3.6/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 3.6/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 5.0/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 6.4/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 7.7/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 9.1/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 10/348 kB 
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 12/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 13/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 15/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 16/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 16/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 17/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 19/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 20/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 21/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 23/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 23/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 24/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 26/348 kB
+Progress (4): 1.3/2.8 MB | 144/171 kB | 57 kB | 27/348 kB
+                                                         
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar (57 kB at 58 kB/s)
+Progress (3): 1.3/2.8 MB | 144/171 kB | 28/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 30/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 31/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 31/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 35/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 39/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 44/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 44/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 48/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 52/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 56/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 56/348 kB
+Progress (3): 1.3/2.8 MB | 144/171 kB | 61/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 61/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 65/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 69/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 69/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 73/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 73/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 78/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 82/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 82/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 86/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 90/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 94/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 99/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 99/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 103/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 107/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 111/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 111/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 116/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 120/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 124/348 kB
+Progress (3): 1.4/2.8 MB | 144/171 kB | 128/348 kB
+Progress (3): 1.5/2.8 MB | 144/171 kB | 128/348 kB
+Progress (3): 1.5/2.8 MB | 144/171 kB | 133/348 kB
+Progress (3): 1.5/2.8 MB | 144/171 kB | 137/348 kB
+Progress (3): 1.5/2.8 MB | 144/171 kB | 141/348 kB
+Progress (3): 1.5/2.8 MB | 144/171 kB | 141/348 kB
+Progress (3): 1.5/2.8 MB | 144/171 kB | 145/348 kB
+Progress (3): 1.5/2.8 MB | 149/171 kB | 145/348 kB
+Progress (3): 1.5/2.8 MB | 149/171 kB | 149/348 kB
+Progress (3): 1.5/2.8 MB | 153/171 kB | 149/348 kB
+Progress (3): 1.5/2.8 MB | 153/171 kB | 154/348 kB
+Progress (3): 1.5/2.8 MB | 157/171 kB | 154/348 kB
+Progress (3): 1.5/2.8 MB | 157/171 kB | 158/348 kB
+Progress (3): 1.5/2.8 MB | 161/171 kB | 158/348 kB
+Progress (3): 1.5/2.8 MB | 161/171 kB | 162/348 kB
+Progress (3): 1.5/2.8 MB | 161/171 kB | 162/348 kB
+Progress (3): 1.5/2.8 MB | 161/171 kB | 166/348 kB
+Progress (3): 1.5/2.8 MB | 166/171 kB | 166/348 kB
+Progress (3): 1.5/2.8 MB | 170/171 kB | 166/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 166/348 kB    
+Progress (3): 1.5/2.8 MB | 171 kB | 166/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 171/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 175/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 179/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 183/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 187/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 192/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 196/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 200/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 200/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 217/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 233/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 249/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 266/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 282/348 kB
+Progress (3): 1.5/2.8 MB | 171 kB | 282/348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 282/348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 298/348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 315/348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 331/348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 348 kB    
+Progress (3): 1.6/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.6/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.7/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.7/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.7/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.7/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.7/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.7/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.8/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.8/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.8/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.8/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.8/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.8/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.9/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.9/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.9/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.9/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.9/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.9/2.8 MB | 171 kB | 348 kB
+Progress (3): 1.9/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.0/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.0/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.0/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.0/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.0/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.0/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.1/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.1/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.1/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.1/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.1/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.1/2.8 MB | 171 kB | 348 kB
+Progress (3): 2.2/2.8 MB | 171 kB | 348 kB
+                                          
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar (171 kB at 165 kB/s)
+Progress (2): 2.2/2.8 MB | 348 kB
+Progress (2): 2.2/2.8 MB | 348 kB
+Progress (2): 2.2/2.8 MB | 348 kB
+Progress (2): 2.2/2.8 MB | 348 kB
+Progress (2): 2.2/2.8 MB | 348 kB
+Progress (2): 2.3/2.8 MB | 348 kB
+Progress (2): 2.3/2.8 MB | 348 kB
+Progress (2): 2.3/2.8 MB | 348 kB
+Progress (2): 2.3/2.8 MB | 348 kB
+Progress (2): 2.3/2.8 MB | 348 kB
+Progress (2): 2.3/2.8 MB | 348 kB
+Progress (2): 2.4/2.8 MB | 348 kB
+Progress (2): 2.4/2.8 MB | 348 kB
+Progress (2): 2.4/2.8 MB | 348 kB
+Progress (2): 2.4/2.8 MB | 348 kB
+Progress (2): 2.4/2.8 MB | 348 kB
+Progress (2): 2.4/2.8 MB | 348 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar (348 kB at 338 kB/s)
+Progress (1): 2.5/2.8 MB
+Progress (1): 2.5/2.8 MB
+Progress (1): 2.5/2.8 MB
+Progress (1): 2.5/2.8 MB
+Progress (1): 2.5/2.8 MB
+Progress (1): 2.5/2.8 MB
+Progress (1): 2.6/2.8 MB
+Progress (1): 2.6/2.8 MB
+Progress (1): 2.6/2.8 MB
+Progress (1): 2.6/2.8 MB
+Progress (1): 2.6/2.8 MB
+Progress (1): 2.6/2.8 MB
+Progress (1): 2.7/2.8 MB
+Progress (1): 2.7/2.8 MB
+Progress (1): 2.7/2.8 MB
+Progress (1): 2.7/2.8 MB
+Progress (1): 2.7/2.8 MB
+Progress (1): 2.7/2.8 MB
+Progress (1): 2.8/2.8 MB
+Progress (1): 2.8/2.8 MB
+Progress (1): 2.8/2.8 MB
+Progress (1): 2.8/2.8 MB
+Progress (1): 2.8/2.8 MB
+Progress (1): 2.8 MB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar (2.8 MB at 2.7 MB/s)
+[INFO] Surefire report directory: C:\Users\Admin\Desktop\task-flow\target\surefire-reports
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.pom
+Progress (1): 839 B
+Progress (1): 3.1 kB
+Progress (1): 5.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.pom (5.7 kB at 89 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.5.2/surefire-providers-3.5.2.pom
+Progress (1): 849 B
+Progress (1): 2.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.5.2/surefire-providers-3.5.2.pom (2.6 kB at 34 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.pom
+Progress (1): 849 B
+Progress (1): 2.6 kB
+Progress (1): 2.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.pom (2.8 kB at 36 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.pom
+Progress (1): 957 B
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.pom (3.2 kB at 49 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom
+Progress (1): 907 B
+Progress (1): 4.1 kB
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom (5.6 kB at 87 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom
+Progress (1): 1.2 kB
+Progress (1): 1.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom (1.7 kB at 25 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.pom
+Progress (1): 971 B
+Progress (1): 2.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.pom (2.8 kB at 41 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.pom
+Progress (1): 967 B
+Progress (1): 3.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.pom (3.0 kB at 44 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar
+Progress (1): 7.7/189 kB
+Progress (1): 16/189 kB 
+Progress (1): 32/189 kB
+Progress (1): 49/189 kB
+Progress (1): 65/189 kB
+Progress (1): 81/189 kB
+Progress (1): 98/189 kB
+Progress (1): 114/189 kB
+Progress (1): 131/189 kB
+Progress (1): 147/189 kB
+Progress (1): 163/189 kB
+Progress (1): 180/189 kB
+Progress (1): 189 kB    
+Progress (2): 189 kB | 7.7/18 kB
+Progress (2): 189 kB | 8.2/18 kB
+Progress (2): 189 kB | 18 kB    
+Progress (3): 189 kB | 18 kB | 3.8/27 kB
+Progress (3): 189 kB | 18 kB | 8.0/27 kB
+Progress (3): 189 kB | 18 kB | 12/27 kB 
+Progress (3): 189 kB | 18 kB | 16/27 kB
+Progress (3): 189 kB | 18 kB | 21/27 kB
+                                       
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.jar (18 kB at 138 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar
+Progress (2): 189 kB | 25/27 kB
+Progress (2): 189 kB | 27 kB   
+                            
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar (189 kB at 1.4 MB/s)
+Progress (2): 27 kB | 3.8/7.7 kB
+Progress (2): 27 kB | 7.7 kB    
+Progress (3): 27 kB | 7.7 kB | 7.7/103 kB
+Progress (3): 27 kB | 7.7 kB | 12/103 kB 
+Progress (3): 27 kB | 7.7 kB | 29/103 kB
+Progress (3): 27 kB | 7.7 kB | 45/103 kB
+Progress (3): 27 kB | 7.7 kB | 61/103 kB
+                                        
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.jar (27 kB at 150 kB/s)
+Progress (2): 7.7 kB | 78/103 kB
+Progress (2): 7.7 kB | 94/103 kB
+Progress (2): 7.7 kB | 103 kB   
+                             
+Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar (7.7 kB at 41 kB/s)
+Progress (2): 103 kB | 3.8/169 kB
+Progress (2): 103 kB | 8.0/169 kB
+Progress (2): 103 kB | 12/169 kB 
+Progress (2): 103 kB | 16/169 kB
+Progress (2): 103 kB | 21/169 kB
+Progress (2): 103 kB | 37/169 kB
+Progress (2): 103 kB | 53/169 kB
+Progress (2): 103 kB | 70/169 kB
+Progress (2): 103 kB | 86/169 kB
+Progress (2): 103 kB | 103/169 kB
+Progress (2): 103 kB | 119/169 kB
+Progress (2): 103 kB | 135/169 kB
+Progress (2): 103 kB | 152/169 kB
+Progress (2): 103 kB | 168/169 kB
+Progress (2): 103 kB | 169 kB    
+                             
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar (103 kB at 450 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar (169 kB at 646 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.pom
+Progress (1): 966 B
+Progress (1): 3.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.pom (3.0 kB at 43 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.jar
+Progress (1): 7.7/189 kB
+Progress (1): 16/189 kB 
+Progress (1): 32/189 kB
+Progress (1): 49/189 kB
+Progress (1): 65/189 kB
+Progress (1): 81/189 kB
+Progress (1): 98/189 kB
+Progress (1): 114/189 kB
+Progress (1): 131/189 kB
+Progress (1): 147/189 kB
+Progress (1): 163/189 kB
+Progress (1): 180/189 kB
+Progress (1): 189 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.jar (189 kB at 2.0 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running erdem.taskflow.controller.TaskControllerTest
+./mvnw : Mockito is 
+currently 
+self-attaching to 
+enable the 
+inline-mock-maker. 
+This will no longer 
+work in future 
+releases of the JDK. 
+Please add Mockito 
+as an agent to your 
+build what is 
+described in 
+Mockito's 
+documentation: https:
+//javadoc.io/doc/org.
+mockito/mockito-core/
+latest/org/mockito/Mo
+ckito.html#0.3
+At line:1 char:1
++ ./mvnw clean 
+verify -e > 
+verify_error_4.txt 
+2>&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Mockito   
+  is curr...ockit    
+o.html#0.3:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+WARNING: A Java 
+agent has been 
+loaded dynamically (C
+:\Users\Admin\.m2\rep
+ository\net\bytebuddy
+\byte-buddy-agent\1.1
+5.11\byte-buddy-agent
+-1.15.11.jar)
+WARNING: If a 
+serviceability tool 
+is in use, please 
+run with -XX:+EnableD
+ynamicAgentLoading 
+to hide this warning
+WARNING: If a 
+serviceability tool 
+is not in use, 
+please run with -Djdk
+.instrument.traceUsag
+e for more 
+information
+WARNING: Dynamic 
+loading of agents 
+will be disallowed 
+by default in a 
+future release
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.27 s -- in erdem.taskflow.controller.TaskControllerTest
+[INFO] Running erdem.taskflow.controller.TaskIntegrationTest
+01:06:10.630 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [erdem.taskflow.controller.TaskIntegrationTest]: TaskIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:06:13.276 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration erdem.taskflow.TaskFlowApplication for test class erdem.taskflow.controller.TaskIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2026-01-23T01:06:20.967+05:00  INFO 17200 --- [Task-Flow] [           main] e.t.controller.TaskIntegrationTest       : Starting TaskIntegrationTest using Java 21.0.7 with PID 17200 (started by Admin in C:\Users\Admin\Desktop\task-flow)
+2026-01-23T01:06:20.983+05:00  INFO 17200 --- [Task-Flow] [           main] e.t.controller.TaskIntegrationTest       : No active profile set, falling back to 1 default profile: "default"
+2026-01-23T01:06:29.970+05:00  INFO 17200 --- [Task-Flow] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-23T01:06:30.329+05:00  INFO 17200 --- [Task-Flow] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 282 ms. Found 1 JPA repository interface.
+2026-01-23T01:06:37.194+05:00  INFO 17200 --- [Task-Flow] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-23T01:06:38.677+05:00  INFO 17200 --- [Task-Flow] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-23T01:06:39.065+05:00  INFO 17200 --- [Task-Flow] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-23T01:06:40.807+05:00  INFO 17200 --- [Task-Flow] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-23T01:06:41.459+05:00  INFO 17200 --- [Task-Flow] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-23T01:06:43.457+05:00  INFO 17200 --- [Task-Flow] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@7af65b49
+2026-01-23T01:06:43.482+05:00  INFO 17200 --- [Task-Flow] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-23T01:06:44.041+05:00  INFO 17200 --- [Task-Flow] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.44.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-23T01:06:56.716+05:00  INFO 17200 --- [Task-Flow] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-23T01:06:57.418+05:00  INFO 17200 --- [Task-Flow] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-23T01:06:59.706+05:00  INFO 17200 --- [Task-Flow] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-23T01:07:14.350+05:00  WARN 17200 --- [Task-Flow] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-23T01:07:14.550+05:00  INFO 17200 --- [Task-Flow] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-01-23T01:07:18.431+05:00  INFO 17200 --- [Task-Flow] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-01-23T01:07:18.433+05:00  INFO 17200 --- [Task-Flow] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-01-23T01:07:18.445+05:00  INFO 17200 --- [Task-Flow] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2026-01-23T01:07:18.625+05:00  INFO 17200 --- [Task-Flow] [           main] e.t.controller.TaskIntegrationTest       : Started TaskIntegrationTest in 62.407 seconds (process running for 96.939)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 75.71 s -- in erdem.taskflow.controller.TaskIntegrationTest
+[INFO] Running erdem.taskflow.repository.TaskRepositoryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.054 s -- in erdem.taskflow.repository.TaskRepositoryTest
+[INFO] Running erdem.taskflow.service.TaskServiceTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.956 s -- in erdem.taskflow.service.TaskServiceTest
+[INFO] Running erdem.taskflow.TaskFlowApplicationTests
+2026-01-23T01:07:27.660+05:00  INFO 17200 --- [Task-Flow] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [erdem.taskflow.TaskFlowApplicationTests]: TaskFlowApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-23T01:07:27.725+05:00  INFO 17200 --- [Task-Flow] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration erdem.taskflow.TaskFlowApplication for test class erdem.taskflow.TaskFlowApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2026-01-23T01:07:29.093+05:00  INFO 17200 --- [Task-Flow] [           main] e.taskflow.TaskFlowApplicationTests      : Starting TaskFlowApplicationTests using Java 21.0.7 with PID 17200 (started by Admin in C:\Users\Admin\Desktop\task-flow)
+2026-01-23T01:07:29.097+05:00  INFO 17200 --- [Task-Flow] [           main] e.taskflow.TaskFlowApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-01-23T01:07:30.851+05:00  INFO 17200 --- [Task-Flow] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-23T01:07:30.932+05:00  INFO 17200 --- [Task-Flow] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2026-01-23T01:07:32.226+05:00  INFO 17200 --- [Task-Flow] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-23T01:07:32.272+05:00  INFO 17200 --- [Task-Flow] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-23T01:07:32.564+05:00  INFO 17200 --- [Task-Flow] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-23T01:07:32.611+05:00  INFO 17200 --- [Task-Flow] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-01-23T01:07:32.670+05:00  INFO 17200 --- [Task-Flow] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.sqlite.jdbc4.JDBC4Connection@5dc88d33
+2026-01-23T01:07:32.671+05:00  INFO 17200 --- [Task-Flow] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-01-23T01:07:32.683+05:00  INFO 17200 --- [Task-Flow] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 3.44.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-23T01:07:34.001+05:00  INFO 17200 --- [Task-Flow] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-23T01:07:34.028+05:00  INFO 17200 --- [Task-Flow] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-23T01:07:35.288+05:00  WARN 17200 --- [Task-Flow] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-23T01:07:35.324+05:00  INFO 17200 --- [Task-Flow] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-01-23T01:07:35.978+05:00  INFO 17200 --- [Task-Flow] [           main] e.taskflow.TaskFlowApplicationTests      : Started TaskFlowApplicationTests in 8.201 seconds (process running for 114.29)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.420 s -- in erdem.taskflow.TaskFlowApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.14:report (report) @ Task-Flow ---
+[INFO] Loading execution data file C:\Users\Admin\Desktop\task-flow\target\jacoco.exec
+[INFO] Analyzed bundle 'Task-Flow' with 10 classes
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ Task-Flow ---
+[INFO] Building jar: C:\Users\Admin\Desktop\task-flow\target\Task-Flow-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.4.1:repackage (repackage) @ Task-Flow ---
+[INFO] Replacing main artifact C:\Users\Admin\Desktop\task-flow\target\Task-Flow-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\Admin\Desktop\task-flow\target\Task-Flow-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- jacoco:0.8.14:check (check) @ Task-Flow ---
+[INFO] Loading execution data file C:\Users\Admin\Desktop\task-flow\target\jacoco.exec
+[INFO] Analyzed bundle 'Task-Flow' with 10 classes
+[INFO] All coverage checks have been met.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:10 min
+[INFO] Finished at: 2026-01-23T01:07:56+05:00
+[INFO] ------------------------------------------------------------------------

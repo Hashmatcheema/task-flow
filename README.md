@@ -1,93 +1,58 @@
-# TechDemo: Continuous Delivery Integration
+# Task Flow
 
-## Checklist
-For a detailed list of tasks and goals, refer to the [Checklist](./CHECKLIST.md).
-This document serves as a guide to ensure all relevant CD aspects are integrated into this demo.
+![Build Status](https://img.shields.io/github/actions/workflow/status/ergulerdem/task-flow/maven.yml?branch=main)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Table of Contents
-1. [Introduction](#Introduction)
-2. [Objective](#Objective)
-3. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
-4. [Usage](#usage)
-5. [Tech Stack](#tech-stack)
-6. [Checklist](#checklist)
-7. [Testing](#testing)
-8. [Continuous Delivery Workflow](#continuous-delivery-workflow)
-9. [Contributing](#contributing)
-10. [License](#license)
-11. [Contact](#contact)
+Task Flow is a robust task management application built with Spring Boot and SQLite. It demonstrates modern Continuous Delivery (CD) principles including automated builds, comprehensive testing, and containerization.
 
-## Introduction
-This repository serves as a guide for the TechDemo of the Continuous Delivery (CD) course.
-It focuses on integrating CD principles into an existing software project rather than developing new software from scratch.
-The aim is to demonstrate automated builds, tests, and deployments in a realistic environment.
-
-## Objective
-The objective is to apply CD practices by automating key processes, ensuring a smoother and more efficient development lifecycle:
-- Automated builds
-- Automated testing (unit, integration, end-to-end)
-- Continuous deployment to production-like environments
+## Features
+- **Task Management**: Create, read, update, and delete tasks.
+- **Filtering**: Advanced filtering by status, priority, and due dates.
+- **RESTful API**: Clean and documented API endpoints.
 
 ## Getting Started
 
 ### Prerequisites
-Ensure the following tools are installed:
-- Git
-- Java JDK / Python / Node.js
+- Java 17+
+- Maven
 - Docker (optional)
 
 ### Installation
-```
-git clone https://github.com/yourusername/continuous-delivery-techdemo.git
-cd continuous-delivery-techdemo
-```
 
-Install dependencies depending on your language:
-```
-npm install
-pip install -r requirements.txt
-mvn install
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ergulerdem/task-flow.git
+   cd task-flow
+   ```
 
-## Usage
-Build the project:
-- Java: mvn clean install
-- Python: python setup.py build
-- JavaScript: npm run build
+2. Build the project:
+   ```bash
+   ./mvnw clean package
+   ```
 
-Run tests:
-Execute all unit/integration tests.
+3. Run the application:
+   ```bash
+   java -jar target/Task-Flow-0.0.1-SNAPSHOT.jar
+   ```
 
-Deployment:
-Automated through CI/CD scripts or workflows.
+   The API will be available at `http://localhost:8080`.
 
-## Tech Stack
-- Java, Python, JavaScript
-- Maven, Pip, NPM
-- JUnit, pytest, Jest
-- GitHub Actions, Jenkins
+## Testing & Coverage
 
-## Testing
-Run:
-```
-npm test
-```
+This project maintains high code quality through automated testing.
 
-Includes unit, integration and end-to-end tests.
+- **Run Tests**:
+  ```bash
+  ./mvnw test
+  ```
+- **Coverage Report**:
+  After running tests, JaCoCo generates a coverage report at:
+  `target/site/jacoco/index.html`
 
-## Continuous Delivery Workflow
-- Automated builds
-- Automated testing
-- Continuous deployment to staging
-- Approval-based production deployment
+## Configuration
 
-## Contributing
-Contributions welcome – see contributing guidelines.
+Configuration templates are available in `src/main/resources/application.properties.example`.
+Sensitive data is excluded from version control.
 
-## License
-MIT License.
-
-## Contact
-michael.ulm@fh-joanneum.at
+## Documentation
+For detailed technical documentation, see [docs/TECHNICAL.md](docs/TECHNICAL.md).

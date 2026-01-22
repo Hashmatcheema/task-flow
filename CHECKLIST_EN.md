@@ -15,9 +15,9 @@ Maximum points are only awarded if the exercise content is meaningfully adapted 
 
 ## Project Setup (10%)
 - [x] Repo initialized
-- [ ] Checklist versioned
+- [x] Checklist versioned
 - [ ] README structured
-- [ ] .gitignore customized
+- [x] .gitignore customized
 
 ## Automation / Pipeline (20%)
 - [x] Automated builds

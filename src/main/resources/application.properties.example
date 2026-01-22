@@ -1,0 +1,16 @@
+# Server Configuration
+server.port=8080
+
+# Database Configuration (Defaults to SQLite for Dev)
+spring.datasource.url=jdbc:sqlite:taskflow.db
+spring.datasource.driver-class-name=org.sqlite.JDBC
+spring.jpa.database-platform=org.hibernate.community.dialect.SQLiteDialect
+spring.jpa.hibernate.ddl-auto=update
+
+# JPA Configuration
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.format_sql=true
+
+# Security Note:
+# Do not commit real passwords or secrets in this file.
+# Use environment variables or specific profile properties for sensitive data.
