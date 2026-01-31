@@ -40,7 +40,7 @@ Task Flow follows a layered architecture:
 - **Repository Layer**: Manages data access using Spring Data JPA (`TaskRepository`)
 - **Model Layer**: Defines persistent entities (`Task`, `Priority`, `Status`)
 
-For detailed architecture documentation, see [docs/TECHNICAL.md](docs/TECHNICAL.md).
+For the requirements specification (functional, non-functional, acceptance criteria), see [docs/TECHNICAL.txt](docs/TECHNICAL.txt).
 
 ## Getting Started
 
@@ -115,7 +115,7 @@ curl -X POST http://localhost:8080/api/tasks \
   }'
 ```
 
-For complete API documentation, see [docs/TECHNICAL.md](docs/TECHNICAL.md).
+For the full requirements specification, see [docs/TECHNICAL.txt](docs/TECHNICAL.txt).
 
 ## Testing
 
@@ -140,31 +140,43 @@ This project maintains high code quality through comprehensive automated testing
 
 ### Code Coverage
 
-The project uses **JaCoCo** for code coverage analysis with the following thresholds:
+The project uses **JaCoCo** and **Cobertura** for code coverage with the following thresholds:
 
-- **Line Coverage**: Minimum 60%
-- **Branch Coverage**: Minimum 15%
+- **Line Coverage**: Minimum 80%
+- **Branch Coverage**: Minimum 70%
+
+Coverage is checked during `mvn verify` (JaCoCo check runs in the verify phase). The build fails if thresholds are not met.
 
 #### Viewing Coverage Reports
 
-After running tests, JaCoCo generates comprehensive coverage reports:
+After running tests or verify, coverage reports are available:
 
-1. **HTML Report**: Open `target/site/jacoco/index.html` in your browser
-2. **XML Report**: Available at `target/site/jacoco/jacoco.xml` for CI/CD integration
-3. **Coverage data**: Stored in `target/jacoco.exec`
+1. **JaCoCo HTML Report**: Open `target/site/jacoco/index.html` in your browser
+2. **JaCoCo XML**: `target/site/jacoco/jacoco.xml` (for CI/CD integration)
+3. **Cobertura**: When using the Cobertura profile (see below), reports are at `target/site/cobertura/`
+
+#### Cobertura and Java 17
+
+The **cobertura-maven-plugin** (v2.7) has known compatibility issues with Java 17+ (e.g. `tools.jar` and bytecode instrumentation). Cobertura is therefore **not run by default**. To generate Cobertura reports, use the `cobertura` profile with a Java 11 toolchain or JDK 11:
+
+```bash
+./mvnw verify -Pcobertura
+```
+
+For Java 17+ builds, rely on **JaCoCo** only; reports and thresholds are enforced via JaCoCo.
 
 #### Coverage in CI/CD
 
-Coverage reports are automatically generated in CI/CD pipelines:
-- **GitHub Actions**: Coverage reports are generated in the build job
-- **GitLab CI**: Coverage reports are published as artifacts and displayed in merge requests
+Coverage reports are generated in CI/CD pipelines:
+- **GitHub Actions**: Coverage from the build job
+- **GitLab CI**: JaCoCo reports published as artifacts; coverage displayed in merge requests
 
 #### Current Coverage Status
 
 The project maintains high test coverage across all layers:
-- **Unit Tests**: Controller, Service, and Repository layers
+- **Unit Tests**: Controller, Service, DTO, and Repository layers
 - **Integration Tests**: Full API integration with database
-- **Coverage Reports**: Available in `target/site/jacoco/` after running tests
+- **Reports**: `target/site/jacoco/` (and `target/site/cobertura/` when using `-Pcobertura`)
 
 ### Test Structure
 
@@ -177,6 +189,8 @@ src/test/java/erdem/taskflow/
 │   └── TaskServiceTest.java         # Unit tests for service layer
 ├── repository/
 │   └── TaskRepositoryTest.java      # Repository layer tests
+├── dto/
+│   └── DTOsTest.java                # DTO equals/hashCode/toString tests
 └── TaskFlowApplicationTests.java    # Application context tests
 ```
 
@@ -245,9 +259,7 @@ The project includes automated CI/CD pipelines:
 
 ## Documentation
 
-- **Technical Documentation**: [docs/TECHNICAL.md](docs/TECHNICAL.md) - Architecture, API details, database schema
-- **Assessment Overview**: [ASSESSMENT_EN.md](ASSESSMENT_EN.md) - Project assessment criteria
-- **Checklist**: [CHECKLIST_EN.md](CHECKLIST_EN.md) - Implementation checklist
+- **Requirements specification**: [docs/TECHNICAL.txt](docs/TECHNICAL.txt) - Functional and non-functional requirements, acceptance criteria
 
 ## License
 
