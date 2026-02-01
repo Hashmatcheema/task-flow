@@ -1,7 +1,5 @@
 # Task Flow
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/ergulerdem/task-flow/maven.yml?branch=main)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 Task Flow is a robust task management application built with Spring Boot and SQLite. It demonstrates modern Continuous Delivery (CD) principles including automated builds, comprehensive testing, and containerization.
 
@@ -40,7 +38,6 @@ Task Flow follows a layered architecture:
 - **Repository Layer**: Manages data access using Spring Data JPA (`TaskRepository`)
 - **Model Layer**: Defines persistent entities (`Task`, `Priority`, `Status`)
 
-For the requirements specification (functional, non-functional, acceptance criteria), see [docs/TECHNICAL.txt](docs/TECHNICAL.txt).
 
 ## Getting Started
 
@@ -101,21 +98,6 @@ For the requirements specification (functional, non-functional, acceptance crite
 - `DELETE /api/tasks/{id}` - Delete a task
 - `GET /api/tasks/stats` - Get task statistics
 
-### Example Request
-
-```bash
-# Create a task
-curl -X POST http://localhost:8080/api/tasks \
-  -H "Content-Type: application/json" \
-  -d '{
-    "title": "Complete project",
-    "description": "Finish the task flow project",
-    "priority": "HIGH",
-    "dueDate": "2026-01-31"
-  }'
-```
-
-For the full requirements specification, see [docs/TECHNICAL.txt](docs/TECHNICAL.txt).
 
 ## Testing
 
@@ -140,7 +122,7 @@ This project maintains high code quality through comprehensive automated testing
 
 ### Code Coverage
 
-The project uses **JaCoCo** and **Cobertura** for code coverage with the following thresholds:
+The project uses **JaCoCo** for code coverage with the following thresholds:
 
 - **Line Coverage**: Minimum 80%
 - **Branch Coverage**: Minimum 70%
@@ -153,17 +135,16 @@ After running tests or verify, coverage reports are available:
 
 1. **JaCoCo HTML Report**: Open `target/site/jacoco/index.html` in your browser
 2. **JaCoCo XML**: `target/site/jacoco/jacoco.xml` (for CI/CD integration)
-3. **Cobertura**: When using the Cobertura profile (see below), reports are at `target/site/cobertura/`
 
-#### Cobertura and Java 17
+#### Open Clover (optional)
 
-The **cobertura-maven-plugin** (v2.7) has known compatibility issues with Java 17+ (e.g. `tools.jar` and bytecode instrumentation). Cobertura is therefore **not run by default**. To generate Cobertura reports, use the `cobertura` profile with a Java 11 toolchain or JDK 11:
+**Open Clover** can be used as an alternative coverage tool with the same thresholds (80% line, 70% branch). It is compatible with Java 17. To generate Open Clover reports and run its coverage check, use the `clover` profile:
 
 ```bash
-./mvnw verify -Pcobertura
+./mvnw verify -Pclover
 ```
 
-For Java 17+ builds, rely on **JaCoCo** only; reports and thresholds are enforced via JaCoCo.
+Reports are generated at `target/site/clover/`. The same coverage requirements (line ≥ 80%, branch ≥ 70%) are enforced when the profile is enabled.
 
 #### Coverage in CI/CD
 
@@ -176,7 +157,7 @@ Coverage reports are generated in CI/CD pipelines:
 The project maintains high test coverage across all layers:
 - **Unit Tests**: Controller, Service, DTO, and Repository layers
 - **Integration Tests**: Full API integration with database
-- **Reports**: `target/site/jacoco/` (and `target/site/cobertura/` when using `-Pcobertura`)
+- **Reports**: `target/site/jacoco/` (and `target/site/clover/` when using `-Pclover`)
 
 ### Test Structure
 
@@ -193,74 +174,3 @@ src/test/java/erdem/taskflow/
 │   └── DTOsTest.java                # DTO equals/hashCode/toString tests
 └── TaskFlowApplicationTests.java    # Application context tests
 ```
-
-## Configuration
-
-### Configuration Files
-
-**Configuration templates are versioned in the repository** to provide a starting point for setup:
-
-- **`application.properties.example`** - Comprehensive template for local development (versioned)
-- **`application-docker.properties`** - Configuration for Docker deployment (versioned)
-- **`application-test.properties`** - Test-specific configuration (versioned)
-
-**Note**: Actual `application.properties` files with sensitive data are excluded from version control via `.gitignore`.
-
-### Setting Up Configuration
-
-1. **Copy the example configuration**:
-   ```bash
-   cp src/main/resources/application.properties.example src/main/resources/application.properties
-   ```
-   On Windows:
-   ```cmd
-   copy src\main\resources\application.properties.example src\main\resources\application.properties
-   ```
-
-2. **Customize as needed**:
-   - Database connection settings
-   - Server port
-   - JPA configuration
-   - Logging levels
-   - Environment-specific settings
-
-3. **For Docker deployment**, use the `application-docker.properties` profile:
-   ```bash
-   docker-compose up -d
-   ```
-
-### Security Notes
-
-- **Configuration templates are versioned** - `application.properties.example` serves as a safe template
-- **Sensitive data is excluded** from version control via `.gitignore`
-- **Database files** (`*.db`, `*.sqlite`) are excluded
-- **Never commit** real passwords, API keys, or secrets
-- **Use environment variables** for sensitive configuration in production:
-  ```properties
-  spring.datasource.password=${DB_PASSWORD}
-  ```
-- **Use Spring profiles** for different environments (dev, prod, etc.)
-
-## CI/CD Pipeline
-
-The project includes automated CI/CD pipelines:
-
-### GitHub Actions
-
-- **Location**: `.github/workflows/pipeline.yml`
-- **Triggers**: Push and pull requests to `main` branch
-- **Stages**: Build, Test, Docker Build
-
-### GitLab CI
-
-- **Location**: `.gitlab-ci.yml`
-- **Stages**: Build, Test, Quality, Package, Deploy
-- **Features**: Automated testing, code quality checks, Docker image building
-
-## Documentation
-
-- **Requirements specification**: [docs/TECHNICAL.txt](docs/TECHNICAL.txt) - Functional and non-functional requirements, acceptance criteria
-
-## License
-
-This project is licensed under the MIT License.
